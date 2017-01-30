@@ -13,7 +13,7 @@ $(function () {
     "use strict";
     $('.preloader').fadeOut(2000); // set duration in brackets    
 });*/
-$(window).on('load', function () {
+$(window).ready(function () {
     "use strict";
     $(".preloader").fadeOut(2000, function () {
         $(this).remove();
