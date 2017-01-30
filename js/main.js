@@ -9,10 +9,17 @@ $(function () {
 });
  /* jQuery Preloader
   -----------------------------------------------*/
-$(window).ready(function () {
+/*$(window).load(function () {
     "use strict";
     $('.preloader').fadeOut(2000); // set duration in brackets    
+});*/
+$(window).on('load', function () {
+    "use strict";
+    $(".preloader").fadeOut(2000, function () {
+        $(this).remove();
+    });
 });
+
 // Toggle Script
 (function () {
     "use strict";
