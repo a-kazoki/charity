@@ -1,26 +1,22 @@
-/*global $*/
-$(function () {
-    "use strict";
-    $(".element").typed({
-        strings: ["Who we are", "We give what we can.", "We care about others", "We are a global community."],
-        typeSpeed: 50,
-        loop: true
+$(function(){
+        $(".element").typed({
+            strings: ["Who we are", "We give what we can.","We care about others","We are a global community."],
+            typeSpeed: 50,
+            loop: true
+        });
     });
-});
  /* jQuery Preloader
   -----------------------------------------------*/
-$(window).load(function () {
-    "use strict";
-    $('.preloader').fadeOut(2000); // set duration in brackets    
+$(window).load(function(){
+    $('.preloader').fadeOut(1000); // set duration in brackets    
 });
 // Toggle Script
-(function () {
-    "use strict";
-	var container = document.getElementById('container'),
-		trigger = container.querySelector('button.trigger');
+(function() {
+	var container = document.getElementById( 'container' ),
+		trigger = container.querySelector( 'button.trigger' );
 
 	function toggleContent() {
-		if (classie.has( container, 'container-open' ) ) {
+		if( classie.has( container, 'container-open' ) ) {
 			classie.remove( container, 'container-open' );
 			classie.remove( trigger, 'trigger-active' );
 			window.addEventListener( 'scroll', noscroll );
