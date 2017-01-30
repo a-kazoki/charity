@@ -7,8 +7,8 @@ $(function(){
     });
  /* jQuery Preloader
   -----------------------------------------------*/
-$(window).on('load', function () {
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+$(window).ready(function(){
+    $('.preloader').fadeOut(2000); // set duration in brackets    
 });
 // Toggle Script
 (function() {
